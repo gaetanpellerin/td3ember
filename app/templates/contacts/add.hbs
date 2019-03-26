@@ -1,0 +1,14 @@
+<form>
+  {{input value=model.nom placeholder="Nom" }}
+  {{input value=model.prenom placeholder="Prenom" }}
+  {{input value=model.email placeholder="Mail" }}
+
+
+  <button {{action "addContact" model}} class="btn btn-success">
+    Valider
+  </button>
+
+</form>
+
+
+{{outlet}}

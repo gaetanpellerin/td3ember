@@ -1,0 +1,12 @@
+<h2> Contacts </h2>
+<ul>
+{{#each model.datas as |contact| }}
+  <li>{{contact.nom}}</li>
+
+{{/each}}
+</ul>
+
+{{#link-to 'contacts.add' class="btn btn-primary"}}
+  Ajouter un contact...
+{{/link-to}}
+{{outlet}}
